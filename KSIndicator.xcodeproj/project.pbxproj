@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32593CE51514F4E600834AE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32593CE41514F4E600834AE1 /* UIKit.framework */; };
+		32593CE71514F4E600834AE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32593CE61514F4E600834AE1 /* Foundation.framework */; };
+		32593CE91514F4E600834AE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32593CE81514F4E600834AE1 /* CoreGraphics.framework */; };
+		32593CEF1514F4E600834AE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32593CED1514F4E600834AE1 /* InfoPlist.strings */; };
+		32593CF11514F4E600834AE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32593CF01514F4E600834AE1 /* main.m */; };
+		32593CF51514F4E600834AE1 /* KSIndicatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32593CF41514F4E600834AE1 /* KSIndicatorAppDelegate.m */; };
+		32593CF81514F4E700834AE1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32593CF61514F4E700834AE1 /* MainStoryboard_iPhone.storyboard */; };
+		32593CFB1514F4E700834AE1 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32593CF91514F4E700834AE1 /* MainStoryboard_iPad.storyboard */; };
+		32593CFE1514F4E700834AE1 /* KSIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32593CFD1514F4E700834AE1 /* KSIndicatorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32593CE01514F4E600834AE1 /* KSIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32593CE41514F4E600834AE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32593CE61514F4E600834AE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		32593CE81514F4E600834AE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32593CEC1514F4E600834AE1 /* KSIndicator-Info.plist */ = {isa = PBXFileReference; path = "KSIndicator-Info.plist"; sourceTree = "<group>"; };
+		32593CEE1514F4E600834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32593CF01514F4E600834AE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32593CF21514F4E600834AE1 /* KSIndicator-Prefix.pch */ = {isa = PBXFileReference; path = "KSIndicator-Prefix.pch"; sourceTree = "<group>"; };
+		32593CF31514F4E600834AE1 /* KSIndicatorAppDelegate.h */ = {isa = PBXFileReference; path = KSIndicatorAppDelegate.h; sourceTree = "<group>"; };
+		32593CF41514F4E600834AE1 /* KSIndicatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorAppDelegate.m; sourceTree = "<group>"; };
+		32593CF71514F4E700834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		32593CFA1514F4E700834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		32593CFC1514F4E700834AE1 /* KSIndicatorViewController.h */ = {isa = PBXFileReference; path = KSIndicatorViewController.h; sourceTree = "<group>"; };
+		32593CFD1514F4E700834AE1 /* KSIndicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32593CDD1514F4E600834AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32593CE51514F4E600834AE1 /* UIKit.framework in Frameworks */,
+				32593CE71514F4E600834AE1 /* Foundation.framework in Frameworks */,
+				32593CE91514F4E600834AE1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32593CD51514F4E500834AE1 = {
+			isa = PBXGroup;
+			children = (
+				32593CEA1514F4E600834AE1 /* KSIndicator */,
+				32593CE31514F4E600834AE1 /* Frameworks */,
+				32593CE11514F4E600834AE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32593CE11514F4E600834AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32593CE01514F4E600834AE1 /* KSIndicator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32593CE31514F4E600834AE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32593CE41514F4E600834AE1 /* UIKit.framework */,
+				32593CE61514F4E600834AE1 /* Foundation.framework */,
+				32593CE81514F4E600834AE1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32593CEA1514F4E600834AE1 /* KSIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				32593CF31514F4E600834AE1 /* KSIndicatorAppDelegate.h */,
+				32593CF41514F4E600834AE1 /* KSIndicatorAppDelegate.m */,
+				32593CF61514F4E700834AE1 /* MainStoryboard_iPhone.storyboard */,
+				32593CF91514F4E700834AE1 /* MainStoryboard_iPad.storyboard */,
+				32593CFC1514F4E700834AE1 /* KSIndicatorViewController.h */,
+				32593CFD1514F4E700834AE1 /* KSIndicatorViewController.m */,
+				32593CEB1514F4E600834AE1 /* Supporting Files */,
+			);
+			path = KSIndicator;
+			sourceTree = "<group>";
+		};
+		32593CEB1514F4E600834AE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32593CEC1514F4E600834AE1 /* KSIndicator-Info.plist */,
+				32593CED1514F4E600834AE1 /* InfoPlist.strings */,
+				32593CF01514F4E600834AE1 /* main.m */,
+				32593CF21514F4E600834AE1 /* KSIndicator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32593CDF1514F4E600834AE1 /* KSIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32593D011514F4E700834AE1 /* Build configuration list for PBXNativeTarget "KSIndicator" */;
+			buildPhases = (
+				32593CDC1514F4E600834AE1 /* Sources */,
+				32593CDD1514F4E600834AE1 /* Frameworks */,
+				32593CDE1514F4E600834AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSIndicator;
+			productName = KSIndicator;
+			productReference = 32593CE01514F4E600834AE1 /* KSIndicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32593CD71514F4E600834AE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KSIndicator;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 32593CDA1514F4E600834AE1 /* Build configuration list for PBXProject "KSIndicator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 32593CD51514F4E500834AE1;
+			productRefGroup = 32593CE11514F4E600834AE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32593CDF1514F4E600834AE1 /* KSIndicator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32593CDE1514F4E600834AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32593CEF1514F4E600834AE1 /* InfoPlist.strings in Resources */,
+				32593CF81514F4E700834AE1 /* MainStoryboard_iPhone.storyboard in Resources */,
+				32593CFB1514F4E700834AE1 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32593CDC1514F4E600834AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32593CF11514F4E600834AE1 /* main.m in Sources */,
+				32593CF51514F4E600834AE1 /* KSIndicatorAppDelegate.m in Sources */,
+				32593CFE1514F4E700834AE1 /* KSIndicatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32593CED1514F4E600834AE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32593CEE1514F4E600834AE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32593CF61514F4E700834AE1 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32593CF71514F4E700834AE1 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		32593CF91514F4E700834AE1 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32593CFA1514F4E700834AE1 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32593CFF1514F4E700834AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32593D001514F4E700834AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32593D021514F4E700834AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSIndicator/KSIndicator-Prefix.pch";
+				INFOPLIST_FILE = "KSIndicator/KSIndicator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		32593D031514F4E700834AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSIndicator/KSIndicator-Prefix.pch";
+				INFOPLIST_FILE = "KSIndicator/KSIndicator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32593CDA1514F4E600834AE1 /* Build configuration list for PBXProject "KSIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32593CFF1514F4E700834AE1 /* Debug */,
+				32593D001514F4E700834AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32593D011514F4E700834AE1 /* Build configuration list for PBXNativeTarget "KSIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32593D021514F4E700834AE1 /* Debug */,
+				32593D031514F4E700834AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32593CD71514F4E600834AE1 /* Project object */;
+}
