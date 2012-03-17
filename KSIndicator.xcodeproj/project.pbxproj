@@ -23,15 +23,15 @@
 		32593CE41514F4E600834AE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		32593CE61514F4E600834AE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32593CE81514F4E600834AE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		32593CEC1514F4E600834AE1 /* KSIndicator-Info.plist */ = {isa = PBXFileReference; path = "KSIndicator-Info.plist"; sourceTree = "<group>"; };
+		32593CEC1514F4E600834AE1 /* KSIndicator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KSIndicator-Info.plist"; sourceTree = "<group>"; };
 		32593CEE1514F4E600834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32593CF01514F4E600834AE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32593CF21514F4E600834AE1 /* KSIndicator-Prefix.pch */ = {isa = PBXFileReference; path = "KSIndicator-Prefix.pch"; sourceTree = "<group>"; };
-		32593CF31514F4E600834AE1 /* KSIndicatorAppDelegate.h */ = {isa = PBXFileReference; path = KSIndicatorAppDelegate.h; sourceTree = "<group>"; };
+		32593CF21514F4E600834AE1 /* KSIndicator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KSIndicator-Prefix.pch"; sourceTree = "<group>"; };
+		32593CF31514F4E600834AE1 /* KSIndicatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSIndicatorAppDelegate.h; sourceTree = "<group>"; };
 		32593CF41514F4E600834AE1 /* KSIndicatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorAppDelegate.m; sourceTree = "<group>"; };
 		32593CF71514F4E700834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		32593CFA1514F4E700834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		32593CFC1514F4E700834AE1 /* KSIndicatorViewController.h */ = {isa = PBXFileReference; path = KSIndicatorViewController.h; sourceTree = "<group>"; };
+		32593CFC1514F4E700834AE1 /* KSIndicatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSIndicatorViewController.h; sourceTree = "<group>"; };
 		32593CFD1514F4E700834AE1 /* KSIndicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
