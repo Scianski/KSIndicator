@@ -16,6 +16,7 @@
 		32593CF81514F4E700834AE1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32593CF61514F4E700834AE1 /* MainStoryboard_iPhone.storyboard */; };
 		32593CFB1514F4E700834AE1 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32593CF91514F4E700834AE1 /* MainStoryboard_iPad.storyboard */; };
 		32593CFE1514F4E700834AE1 /* KSIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32593CFD1514F4E700834AE1 /* KSIndicatorViewController.m */; };
+		32593D071514F9B300834AE1 /* KSIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32593D061514F9B300834AE1 /* KSIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		32593CFA1514F4E700834AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		32593CFC1514F4E700834AE1 /* KSIndicatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSIndicatorViewController.h; sourceTree = "<group>"; };
 		32593CFD1514F4E700834AE1 /* KSIndicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorViewController.m; sourceTree = "<group>"; };
+		32593D051514F9B300834AE1 /* KSIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSIndicatorView.h; sourceTree = "<group>"; };
+		32593D061514F9B300834AE1 /* KSIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		32593CEA1514F4E600834AE1 /* KSIndicator */ = {
 			isa = PBXGroup;
 			children = (
+				32593D041514F96600834AE1 /* KSIndicatorView */,
 				32593CF31514F4E600834AE1 /* KSIndicatorAppDelegate.h */,
 				32593CF41514F4E600834AE1 /* KSIndicatorAppDelegate.m */,
 				32593CF61514F4E700834AE1 /* MainStoryboard_iPhone.storyboard */,
@@ -99,6 +103,15 @@
 				32593CF21514F4E600834AE1 /* KSIndicator-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32593D041514F96600834AE1 /* KSIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				32593D051514F9B300834AE1 /* KSIndicatorView.h */,
+				32593D061514F9B300834AE1 /* KSIndicatorView.m */,
+			);
+			name = KSIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +181,7 @@
 				32593CF11514F4E600834AE1 /* main.m in Sources */,
 				32593CF51514F4E600834AE1 /* KSIndicatorAppDelegate.m in Sources */,
 				32593CFE1514F4E700834AE1 /* KSIndicatorViewController.m in Sources */,
+				32593D071514F9B300834AE1 /* KSIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
