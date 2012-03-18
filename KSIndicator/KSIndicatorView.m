@@ -2,40 +2,31 @@
 //  KSIndicatorView.m
 //  KSIndicator
 //
-//  Created by Chris Smith on 17.03.2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Chris Scianski on 17.03.2012.
+//  Copyright (c) 2012 www.scianski.com. All rights reserved.
 //
 
 #import "KSIndicatorView.h"
 
-#define LABEL_LEFT_MARGIN 7.0
-#define LABEL_RIGHT_MARGIN 7.0
-#define LABEL_TOP_MARGIN 3.0
-#define LABEL_BOTTOM_MARGIN 3.0
-
-#define INDICATOR_HEIGHT 32
 #define ARROW_HEIGHT 8
 #define ARROW_WIDTH 8
 #define SHADOW_BOTTOM_SPACE 2
 
-@interface KSIndicatorView ()
-{
-	UILabel                 *_label;
-}
-
-@end
-
 @implementation KSIndicatorView
 
-- (id) initWithString:(NSString *)string
+@synthesize label = _label;
+@synthesize labelInsets = _labelInsets;
+
+- (id) initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectZero];
+    self = [super initWithFrame:frame];
+    if (self)
     { 
+        _labelInsets = UIEdgeInsetsMake(3.0, 7.0, 3.0, 7.0);
+        
         self.opaque = NO;
         
-        _label = [[UILabel alloc] init];
-        _label.text = string;
-        
+        _label = [[UILabel alloc] init];        
         _label.textColor = [UIColor whiteColor];
         _label.shadowColor = [UIColor blackColor];
         _label.shadowOffset = CGSizeMake(0.0, -1);
@@ -52,12 +43,11 @@
 -(CGSize)calculateFrameSize
 {
     CGSize labelSize = [_label.text sizeWithFont:_label.font];
-    return CGSizeMake(round(LABEL_LEFT_MARGIN + labelSize.width + LABEL_RIGHT_MARGIN), INDICATOR_HEIGHT);
+    return CGSizeMake(round(self.labelInsets.left + labelSize.width + self.labelInsets.right), self.labelInsets.top + self.labelInsets.bottom + labelSize.height + ARROW_HEIGHT + SHADOW_BOTTOM_SPACE);
 }
 
 -(void)layoutSubviews
 {
-
     CGSize labelSize = [_label.text sizeWithFont:_label.font];
     NSInteger x = roundf(self.bounds.size.width / 2 - labelSize.width / 2);
     _label.frame = CGRectMake(x, (self.bounds.size.height - ARROW_HEIGHT - SHADOW_BOTTOM_SPACE) / 2 - labelSize.height / 2, labelSize.width, labelSize.height);
@@ -87,15 +77,15 @@
 	CGPathAddArcToPoint(path, NULL, minx, maxy, minx, midy, radius);
     
 	CGPathCloseSubpath(path);
-    
+    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
     CGContextSetFillColorWithColor(context, [UIColor colorWithWhite:0.0 alpha:0.6].CGColor);
-	CGContextAddPath(context, path);
-    CGContextSetShadowWithColor(context, CGSizeMake(0.0, 1.0), 2, [UIColor colorWithWhite:0.0 alpha:0.6].CGColor);
+    CGContextSetShadowWithColor(context, CGSizeMake(0.0, 1.0), 4, [UIColor colorWithWhite:0.0 alpha:1.0].CGColor);
+    CGContextAddPath(context, path);
     CGContextFillPath(context);
-    CGContextRestoreGState(context);    
+    
+    CGContextRestoreGState(context); 
     
     CFRelease(path);
-    
 }
 
 // Only override drawRect: if you perform custom drawing.
@@ -103,7 +93,6 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
     [self drawPopoverShapeWith:rect context:context];
     
 }

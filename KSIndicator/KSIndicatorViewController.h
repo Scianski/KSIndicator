@@ -10,4 +10,6 @@
 
 @interface KSIndicatorViewController : UIViewController
 
+- (IBAction)barButtonPressed:(UIButton *)sender;
+
 @end
